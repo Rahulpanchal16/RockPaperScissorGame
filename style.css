@@ -1,0 +1,88 @@
+* {
+  font-family: "Edu NSW ACT Foundation", sans-serif;
+}
+
+body,
+html {
+  background-color: #252422;
+  color: #fb8500;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#container {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+p {
+  font-size: 40px;
+}
+.btn {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  background-color: transparent;
+  border: 1px solid #fb8500;
+  color: #fb8500;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn button:hover {
+  background-color: #fb8500;
+  border: 1px solid #252422;
+  color: #252422;
+}
+
+#score {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#score span {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  #container {
+    margin-top: 30%;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  .btn button {
+    width: 50px;
+    height: 50px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+
+  #score span {
+    font-size: 15px;
+  }
+}
