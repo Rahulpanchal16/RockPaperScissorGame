@@ -35,7 +35,6 @@ function reset() {
 }
 
 function updateUI() {
-  // Update UI with the scores
   win.innerText = `wins: ${score.win}`;
   loss.innerText = `losses: ${score.loss}`;
   tie.innerText = `ties: ${score.tie}`;
@@ -66,8 +65,6 @@ function play(usermove) {
   }
 
   localStorage.setItem("score", JSON.stringify(score));
-
-  // Update UI with the updated scores
   updateUI();
 }
 updateUI();
